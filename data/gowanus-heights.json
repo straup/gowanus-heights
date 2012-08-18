@@ -1,0 +1,20 @@
+{
+  "type": "FeatureCollection", 
+  "features": [
+    {
+      "geometry": {
+        "type": "Polygon", 
+        "coordinates": [
+          [
+          ]
+        ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "id": "18807769",
+        "artisinal:id": "18807769",
+        "artisinal:source": "http://www.brooklynintegers.com/"
+      }
+    }
+  ]
+}
