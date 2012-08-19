@@ -16,8 +16,29 @@ function gh_init(){
 	map.fitBounds(extent);
 	// map.setMaxBounds(extent);
 
-	// var toner = 'http://tile.stamen.com/toner-background/{z}/{x}/{y}.jpg';
-	var toner = 'http://tile.stamen.com/toner/{z}/{x}/{y}.jpg';
+	var toner = 'http://tile.stamen.com/toner-labels/{z}/{x}/{y}.png';
+
+	var heights_style = {
+		"color": '#000',
+		"weight": 1,
+		"opacity": 1,
+		fillOpacity: 1,
+		fillColor: '#fff',
+	};
+
+	var heights = L.geoJson(gh_heights, { style: heights_style });
+	heights.addTo(map);
+
+	var canal_style = {
+		"color": "#fff",
+		"weight": 1,
+		"opacity": 1,
+		fillOpacity: 1,
+		fillColor: '#000',
+	};
+
+	var canal = L.geoJson(gh_canal, { style: canal_style });
+	canal.addTo(map);
 
 	var base = L.tileLayer(toner, {
 	    attribution: 'chicken chicken chicken',
@@ -25,11 +46,5 @@ function gh_init(){
 	});
 
 	base.addTo(map);
-
-	var heights = L.geoJson(gh_heights);
-	heights.addTo(map);
-
-	var canal = L.geoJson(gh_canal);
-	canal.addTo(map);
 
 }
