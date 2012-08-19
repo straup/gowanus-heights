@@ -42,7 +42,7 @@ function gh_init(){
 
 	var base = L.tileLayer(toner, {
 	    attribution: 'chicken chicken chicken',
-	    maxZoom: 18
+	    maxZoom: 18,
 	});
 
 	base.addTo(map);
