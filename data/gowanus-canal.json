@@ -621,7 +621,13 @@
         40.6817526
       ], 
       "properties": {
-        "id": "113082101"
+        "id": 18807775,
+        "woe:id": 18807775,
+	"woe:parent": 18807771,
+        "osm:id": 113082101,
+	"name": "Gowanus Canal",
+        "artisinal:id": 18807775,
+        "artisinal:source": "http://www.brooklynintegers.com/"
       }
     }
   ]

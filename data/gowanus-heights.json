@@ -42,10 +42,18 @@
         ]
       }, 
       "type": "Feature", 
+      "bbox": [
+              -73.991004, 
+              40.671475,
+              -73.990881, 
+              40.686101
+      ],
       "properties": {
-        "id": "18807771",
+        "id": 18807771,
+        "woe:id": 18807771,
+	"woe:parent": 12589335,
 	"name": "Gowanus Heights",
-        "artisinal:id": "18807771",
+          "artisinal:id": 18807771,
         "artisinal:source": "http://www.brooklynintegers.com/"
       }
     }
