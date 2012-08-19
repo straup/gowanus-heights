@@ -1,0 +1,49 @@
+<Map background-color="transparent" srs="+proj=latlong +ellps=WGS84 +datum=WGS84 +no_defs">
+
+    <Style name="gowanus-heights">
+        <Rule>
+	<PolygonSymbolizer fill="white" />
+	<LineSymbolizer stroke="black" stroke-width="0" />
+	</Rule>
+    </Style>
+
+    <Style name="gowanus-heights-bg">
+        <Rule>
+	<PolygonSymbolizer fill="black" />
+	<LineSymbolizer stroke="black" stroke-width="10" stroke-linecap="square" />
+	</Rule>
+    </Style>
+
+    <Style name="gowanus-canal">
+        <Rule>
+	<PolygonSymbolizer fill="black" />
+	<LineSymbolizer stroke="white" stroke-width="0" />
+	</Rule>
+    </Style>
+
+    <Style name="gowanus-canal-bg">
+        <Rule>
+	<PolygonSymbolizer fill="white" />
+	<LineSymbolizer stroke="white" stroke-width="6" />
+	</Rule>
+    </Style>
+
+    <Layer name="gowanus-heights" srs="+proj=latlong +ellps=WGS84 +datum=WGS84 +no_defs" status="on">
+        <StyleName>gowanus-heights-bg</StyleName>
+        <StyleName>gowanus-heights</StyleName>
+        <Datasource>
+            <Parameter name="type">shape</Parameter>
+            <Parameter name="file">gowanus-heights</Parameter>
+        </Datasource>
+      </Layer>
+
+    <Layer name="gowanus-canal" srs="+proj=latlong +ellps=WGS84 +datum=WGS84 +no_defs" status="on">
+        <StyleName>gowanus-canal-bg</StyleName>
+        <StyleName>gowanus-canal</StyleName>
+        <Datasource>
+            <Parameter name="type">shape</Parameter>
+            <Parameter name="file">gowanus-canal</Parameter>
+        </Datasource>
+      </Layer>
+
+</Map>
