@@ -1,22 +1,32 @@
 #header {
     padding:.5em !important;
     font-size: 1.5em !important;
-    color: #000;
-    min-height: 50px !important;
-    border-bottom: solid thin;
     width: 100% !important;
-    background-color:#fff;
-    text-shadow:none !important;
+    z-index: 900;
+    background-image: url(/images/pattern-gr.jpg);
+    border-bottom: 1px solid #000;
+}
+
+#content {
+    margin:10% !important;
+    margin-top:100px !important;
+    font-size: small !important;
+    padding:5% !important;
+}
+
+.downloads {
+    margin:0px !important;
+    padding: 0px;
 }
 
 #header a {
 }
 
-#brooklynt {
-    font-size:11px !important;
+.brooklynt {
+    display:none;
 }
 
 #map {
     position:absolute;
-    top: 35px;
+    top: 30px;
 }
