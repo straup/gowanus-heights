@@ -4,7 +4,7 @@
     width: 100% !important;
     z-index: 900;
     background-image: url(/images/pattern-gr.jpg);
-    border-bottom: 1px solid #000;
+    border-bottom: 1px dashed #ccc;
 }
 
 #content {
