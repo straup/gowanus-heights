@@ -1,3 +1,22 @@
 #header {
+    padding:.5em !important;
+    font-size: 1.5em !important;
+    color: #000;
+    min-height: 50px !important;
+    border-bottom: solid thin;
+    width: 100% !important;
+    background-color:#fff;
+    text-shadow:none !important;
+}
 
+#header a {
+}
+
+#brooklynt {
+    font-size:11px !important;
+}
+
+#map {
+    position:absolute;
+    top: 35px;
 }
