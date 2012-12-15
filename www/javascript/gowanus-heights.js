@@ -20,6 +20,7 @@ function gh_init(){
 
 	var toner = 'http://tile.stamen.com/toner-labels/{z}/{x}/{y}.png';
 
+	/*
 	var union_style = {
 		"color": "#ccffff",
 		"weight": 2,
@@ -29,6 +30,7 @@ function gh_init(){
 
 	var union = L.geoJson(gh_union, { style: union_style });
 	union.addTo(map);
+	*/
 
 	var heights_style = {
 		"color": '#000',
@@ -41,6 +43,7 @@ function gh_init(){
 	var heights = L.geoJson(gh_heights, { style: heights_style });
 	heights.addTo(map);
 
+	/*
 	var union2_style = {
 		"color": "#ccffff",
 		"weight": 15,
@@ -50,6 +53,7 @@ function gh_init(){
 
 	var union2 = L.geoJson(gh_union, { style: union2_style });
 	union2.addTo(map);
+	*/
 
 	var canal_style = {
 		"color": "#fff",
