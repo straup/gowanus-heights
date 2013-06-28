@@ -49,12 +49,16 @@
               40.686101
       ],
       "properties": {
-        "id": 18807771,
-        "woe:id": 18807771,
-	"woe:parent": 12589335,
-	"name": "Gowanus Heights",
+          "id": 18807771,
+          "woe:id": 18807771,
+	  "woe:parent": 12589335,
+	  "woe:adjacent": [55992163,28751175,28751204,23511835],
+	  "iso": "US",
+	  "woe:placetype": "Suburb",
+	  "woe:lang": "ENG",
+	  "name": "Gowanus Heights",
           "artisinal:id": 18807771,
-        "artisinal:source": "http://www.brooklynintegers.com/"
+          "artisinal:source": "http://www.brooklynintegers.com/"
       }
     }
   ]
