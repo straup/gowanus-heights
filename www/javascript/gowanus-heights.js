@@ -2,7 +2,7 @@ var gh_canal={"type":"FeatureCollection","features":[{"geometry":{"type":"Polygo
 
 var gh_heights={"type":"FeatureCollection","features":[{"geometry":{"type":"Polygon","coordinates":[[[-73.991004,40.671475],[-73.997737,40.674763],[-73.995752,40.678839],[-73.990881,40.686101],[-73.982389,40.682794],[-73.986278,40.677078],[-73.987984,40.675084],[-73.991004,40.671475]]]},"type":"Feature","bbox":[-73.991004,40.671475,-73.990881,40.686101],"properties":{"woe:parent":12589335,"name":"Gowanus Heights","artisinal:source":"http://www.brooklynintegers.com/","artisinal:id":18807771,"woe:id":18807771,"id":18807771}}]};
 
-var gh_union={"type": "FeatureCollection", "features": [{"geometry": {"type": "LineString", "coordinates": [[-73.982988, 40.6774071], [-73.98046, 40.676413], [-73.97796, 40.675438], [-73.975467, 40.674467], [-73.972955, 40.673488], [-73.9711217, 40.6727684]]}, "type": "Feature", "bbox": [-73.9711217, 40.6727684, -73.9711217, 40.6774071], "properties": {"id": "40416339"}}, {"geometry": {"type": "LineString", "coordinates": [[-73.985429, 40.678344], [-73.9831185, 40.6774572], [-73.982988, 40.6774071]]}, "type": "Feature", "bbox": [-73.982988, 40.6774071, -73.982988, 40.678344], "properties": {"id": "40785409"}}, {"geometry": {"type": "LineString", "coordinates": [[-73.987393, 40.679104], [-73.985429, 40.678344]]}, "type": "Feature", "bbox": [-73.985429, 40.678344, -73.985429, 40.679104], "properties": {"id": "40416345"}}, {"geometry": {"type": "LineString", "coordinates": [[-73.988203, 40.679419], [-73.987393, 40.679104]]}, "type": "Feature", "bbox": [-73.987393, 40.679104, -73.987393, 40.679419], "properties": {"id": "25198761"}}, {"geometry": {"type": "LineString", "coordinates": [[-74.0013372, 40.6839243], [-74.001281, 40.683909], [-73.999725, 40.683473], [-73.997872, 40.682957], [-73.9958841, 40.6823959], [-73.993913, 40.681641], [-73.991728, 40.68079], [-73.989559, 40.679946], [-73.98856, 40.679559]]}, "type": "Feature", "bbox": [-73.98856, 40.679559, -73.98856, 40.6839243], "properties": {"id": "46835339"}}, {"geometry": {"type": "LineString", "coordinates": [[-74.005179, 40.684998], [-74.00301, 40.684391], [-74.001648, 40.684009], [-74.0015818, 40.683991]]}, "type": "Feature", "bbox": [-74.0015818, 40.683991, -74.0015818, 40.684998], "properties": {"id": "46835402"}}]};
+var gh_slope={"type":"FeatureCollection","features":[{"type":"Feature","id":51685631,"properties":{"name":"Gowanus Slope","id":51685631},"geometry":{"type":"Polygon","coordinates":[[[-73.9910289645195,40.67145765464744],[-73.98630827665328,40.67707628102809],[-73.98242712020874,40.682769691978926],[-73.98008823394775,40.68188082776925],[-73.98396134376526,40.67617106728391],[-73.98636996746063,40.673274300707305],[-73.98877322673798,40.67038351140882],[-73.9910289645195,40.67145765464744]]]}}]};
 
 function gh_init(){
 
@@ -20,17 +20,16 @@ function gh_init(){
 
 	var toner = 'http://tile.stamen.com/toner-labels/{z}/{x}/{y}.png';
 
-	/*
-	var union_style = {
-		"color": "#ccffff",
-		"weight": 2,
-		"dashArray": 0,
-		"opacity": .2,
+	var slope_style = {
+		"color": '#fff',
+		"weight": 1,
+		"opacity": 0,
+		fillOpacity: .25,
+		fillColor: '#ccffff'
 	};
 
-	var union = L.geoJson(gh_union, { style: union_style });
-	union.addTo(map);
-	*/
+	var slope = L.geoJson(gh_slope, { style: slope_style });
+	slope.addTo(map);
 
 	var heights_style = {
 		"color": '#000',
@@ -42,19 +41,6 @@ function gh_init(){
 
 	var heights = L.geoJson(gh_heights, { style: heights_style });
 	heights.addTo(map);
-
-	/*
-	var union2_style = {
-		"color": "#ccffff",
-		"weight": 15,
-		"dashArray": 8,
-		"opacity": .1,
-	};
-
-	var union2 = L.geoJson(gh_union, { style: union2_style });
-	union2.addTo(map);
-	*/
-
 	var canal_style = {
 		"color": "#fff",
 		"weight": 1,
