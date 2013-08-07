@@ -76,3 +76,7 @@ body{
 .downloads {
     margin-left: 10%;
 }
+
+.caveat {
+    font-style: italic;
+}
